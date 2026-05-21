@@ -1,4 +1,5 @@
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -158,4 +159,132 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .m-auto {
+    margin: auto;
+  }
+  .flex {
+    display: flex;
+  }
+  .table {
+    display: table;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-\[red\] {
+    background-color: red;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .lg\:mt-\[40px\] {
+    @media (width >= 64rem) {
+      margin-top: 40px;
+    }
+  }
+  .lg\:h-\[31\] {
+    @media (width >= 64rem) {
+      height: 31;
+    }
+  }
+  .lg\:h-\[31px\] {
+    @media (width >= 64rem) {
+      height: 31px;
+    }
+  }
+  .lg\:h-\[48\] {
+    @media (width >= 64rem) {
+      height: 48;
+    }
+  }
+  .lg\:h-\[48px\] {
+    @media (width >= 64rem) {
+      height: 48px;
+    }
+  }
+  .lg\:w-\[112\] {
+    @media (width >= 64rem) {
+      width: 112;
+    }
+  }
+  .lg\:w-\[112px\] {
+    @media (width >= 64rem) {
+      width: 112px;
+    }
+  }
+  .lg\:w-\[160px\] {
+    @media (width >= 64rem) {
+      width: 160px;
+    }
+  }
+  .lg\:max-w-\[10px\] {
+    @media (width >= 64rem) {
+      max-width: 10px;
+    }
+  }
+  .lg\:max-w-\[1320px\] {
+    @media (width >= 64rem) {
+      max-width: 1320px;
+    }
+  }
+  .lg\:max-w-\[1780\] {
+    @media (width >= 64rem) {
+      max-width: 1780;
+    }
+  }
+  .lg\:max-w-\[1780px\] {
+    @media (width >= 64rem) {
+      max-width: 1780px;
+    }
+  }
+  .lg\:bg-\[\#F4F4F5\] {
+    @media (width >= 64rem) {
+      background-color: #F4F4F5;
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
+    }
+  }
+}
